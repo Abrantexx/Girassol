@@ -1,13 +1,14 @@
 function proximaTela(idProximaTela) {
+    const telas = document.querySelectorAll(".tela");
+
+    telas.forEach(tela => {
+        tela.classList.add("escondida");
+    });
+
     const proxima = document.getElementById(idProximaTela);
-    
+
     if (proxima) {
-        // Revela a tela tirando a classe escondida
         proxima.classList.remove("escondida");
-        
-        // Rola até ela suavemente
-        setTimeout(() => {
-            proxima.scrollIntoView({ behavior: "smooth" });
-        }, 100);
+        window.scrollTo(0, 0);
     }
 }
