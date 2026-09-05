@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: #080808;
+    color: white;
+}
+
+/* ESTRUTURA DAS TELAS NO CELULAR */
+.tela {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+/* Classe para esconder e revelar as telas */
+.tela.escondida {
+    display: none;
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.conteudo {
+    width: 100%;
+    max-width: 500px; /* Largura perfeita para celular */
+    text-align: center;
+}
+
+.pequeno {
+    color: #888;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.3;
+    margin: 15px 0;
+}
+
+h2 {
+    font-size: 26px;
+    font-weight: 500;
+    margin: 15px 0;
+    color: #fff;
+}
+
+.subtitulo {
+    color: #ccc;
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+p {
+    color: #aaa;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 15px 0;
+}
+
+.destaque {
+    margin-top: 25px;
+    font-size: 19px;
+    line-height: 1.5;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.citacao {
+    font-style: italic;
+    color: #72aee6; /* Azul delicado lembrando a Lapis */
+    font-size: 17px;
+    border-left: 2px solid #72aee6;
+    padding-left: 10px;
+    margin: 20px 0;
+    text-align: left;
+}
+
+/* BOTÕES ESTILIZADOS PARA O POLEGAR NO CELULAR */
+button {
+    margin-top: 30px;
+    padding: 15px 30px;
+    width: 100%;
+    max-width: 280px;
+    border: 1px solid #555;
+    border-radius: 25px;
+    background: #111;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:active {
+    background: white;
+    color: black;
+}
+
+/* MÍDIAS (GIFs, POKÉMON E MÚSICA) */
+.media-gif {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    border-radius: 15px;
+    margin: 15px 0;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.05);
+}
+
+.media-pokemon {
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+    margin: 15px 0;
+}
+
+.player-audio {
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 30px;
+    filter: invert(0.9); /* Deixa o player escuro combinando com o tema */
+}

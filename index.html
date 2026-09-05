@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uma parte sua</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- TELA 1: INÍCIO -->
+    <main class="tela" id="tela1">
+        <div class="conteudo">
+            <p class="pequeno">Para você, Chelly.</p>
+            <h1>Você me perguntou se eu me importaria se você chorasse...</h1>
+            <p class="subtitulo">porque, mesmo me amando, uma parte sua diz que você não deve ficar.</p>
+            <button onclick="proximaTela('tela2')">Eu pensei sobre isso...</button>
+        </div>
+    </main>
+
+
+    <!-- TELA 2: PENSAMENTOS -->
+    <section class="tela escondida" id="tela2">
+        <div class="conteudo">
+            <p class="pequeno">E eu pensei.</p>
+            <h2>Por bastante tempo.</h2>
+            <p>Não sobre como fazer essa parte sua desaparecer.</p>
+            <p>Nem sobre como convencer você a ficar.</p>
+            <p class="destaque">Pensei sobre o que significa amar alguém que também está tentando entender o que sente.</p>
+            <button onclick="proximaTela('tela3')">Continue...</button>
+        </div>
+    </section>
+
+
+    <!-- TELA 3: LAPIS LAZULI (STEVEN UNIVERSO) -->
+    <section class="tela escondida" id="tela3">
+        <div class="conteudo">
+            <p class="pequeno">Sobre dar tempo ao tempo...</p>
+            
+            <img src="https://media1.tenor.com/m/9nVmvHl15zsAAAAd/lapis-lazuli-steven-universe.gif" alt="Lapis Lazuli" class="media-gif">
+
+            <h2>A Lapis me ensinou algo...</h2>
+            <p class="citacao">"Eu me machuquei muito. Como você fez para parar de doer?"</p>
+            <p>Em Steven Universo, a Lapis precisou de tempo para se entender e se curar do passado. Ela precisou aprender a ser livre antes de conseguir se conectar com alguém sem medo.</p>
+            <p class="destaque">Eu entendi que respeitar seu tempo e suas dúvidas também é uma forma de amar você.</p>
+            <button onclick="proximaTela('tela4')">Ainda tem mais...</button>
+        </div>
+    </section>
+
+
+    <!-- TELA 4: HORA DE AVENTURA -->
+    <section class="tela escondida" id="tela4">
+        <div class="conteudo">
+            <p class="pequeno">Sobre mudar e fluir...</p>
+            
+            <img src="https://media1.tenor.com/m/vbtRDmjc6y4AAAAC/jake-drinking-tea.gif" alt="Hora de Aventura" class="media-gif">
+
+            <h2>Como o Jake diz...</h2>
+            <p class="citacao">"Mudar é o nosso estado normal. Mesmo se não estivermos mudando por fora, estamos mudando por dentro constantemente."</p>
+            <p>Hora de Aventura me mostrou que as coisas mudam, as pessoas mudam e que não precisamos rotular ou ter medo do futuro pra aproveitar o presente.</p>
+            <button onclick="proximaTela('tela5')">Olha isso aqui...</button>
+        </div>
+    </section>
+
+
+    <!-- TELA 5: A MÚSICA & O NOVO OLHAR -->
+    <section class="tela escondida" id="tela5">
+        <div class="conteudo">
+            <p class="pequeno">Coisas que são nossas...</p>
+
+            <h2>Você mudou a forma como eu vejo o mundo.</h2>
+            <p>Desde que você entrou na minha vida, tudo ganhou mais cor. Cada desenho, cada conversa e cada detalhe que a gente compartilha.</p>
+            
+            <p class="subtitulo">Aperte o play pra ouvir nossa música:</p>
+
+            <audio controls class="player-audio">
+                <source src="musica.mp3" type="audio/mpeg">
+                Seu navegador não suporta áudio.
+            </audio>
+
+            <button onclick="proximaTela('tela6')">Por fim...</button>
+        </div>
+    </section>
+
+
+    <!-- TELA 6: MENSAGEM FINAL -->
+    <section class="tela escondida" id="tela6">
+        <div class="conteudo">
+            <p class="pequeno">Sem pressa, sem cobrança.</p>
+            <h2>Pode chorar, pode sentir medo.</h2>
+            <p>Se uma parte sua diz pra não ficar, tá tudo bem. Eu só quero que você saiba que pode contar comigo e ser 100% você mesma do meu lado.</p>
+            <p class="destaque">Obrigado por me mostrar o mundo de um jeito tão bonito, Chelly. ❤️</p>
+            
+            <button onclick="proximaTela('tela7')">🌻</button>
+        </div>
+    </section>
+
+
+    <!-- TELA 7: GIRASSOL FINAL -->
+    <section class="tela escondida" id="tela7">
+        <div class="conteudo-girassol">
+            <span class="emoji-girassol">🌻</span>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
